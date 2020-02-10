@@ -1,0 +1,238 @@
+body {
+  margin: 0px;
+}
+
+nav {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  background: #FBFBFB;
+  border-bottom: 1px #D8D8D8 solid;
+  width: 100%;
+  height: 10vh;
+  padding: 4px;
+  position: sticky;
+  top: 0;
+}
+
+#dreirad-logo {
+  margin-left: 5%;
+  height: 80%
+}
+
+#brand {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 59px;
+  letter-spacing: 0.225em;
+  font-variant: small-caps;
+  color: #5A5A5A;
+}
+
+#nav-links {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: right;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  margin: 0 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #535353;
+  margin: 0px 4px;
+}
+
+#logo_mobile {
+  display: none;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-variant: small-caps;
+  color: #000000;
+  margin: 30px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.3em;
+  font-variant: small-caps;
+  color: #000000;
+}
+
+p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: 0.05em;
+
+
+  color: #403F3F;
+}
+
+#container {
+  /*margin: 0px 5%;*/
+}
+
+#tile1 {
+  background: url("../images/tile-background.svg") no-repeat center center fixed;
+  background-size: cover;
+  height: 90vh;
+}
+
+#content-1 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding-bottom: 0;
+  column-gap: 2vw;
+  height: 50vh;
+  padding: 5vh;
+}
+
+#tile2, #tile4 {
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.66) 100%), #F3DCB9;
+  background: -o-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.66) 100%), #F3DCB9;
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.66) 100%), #F3DCB9;
+}
+
+#content-2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding-bottom: 0;
+  column-gap: 2vw;
+  padding: 5vh;
+  justify-content: center;
+}
+
+#content-2 > div > p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#team {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5vh;
+  grid-row-gap: 5vh;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.person > img {
+  height: 30vh;
+  margin: auto;
+}
+
+.person > div > p {
+  padding: 0 2vw;
+  margin: 0px;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project > img {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+#tile4 {
+  padding: 5vh;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size:32px;
+  }
+
+  #content-1 {
+    padding: 15vh;
+    padding-top:10vh;
+    padding-bottom: 5vh;
+  }
+}
+
+@media (max-width: 880px) {
+  #nav-links, p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 740px) {
+  p {
+    font-size: 12px;
+    letter-spacing: 0em;
+    line-height:14px;
+  }
+}
+
+@media (max-width: 600px) {
+  #nav-links, #dreirad-logo, #brand {
+    display: none;
+  }
+
+  nav {
+    grid-template-columns: 1fr;
+  }
+
+  #logo_mobile {
+    display: block;
+    margin: 0 auto;
+    height: 70%;
+  }
+
+  #content-1, #content-2, #team {
+    grid-template-columns: 1fr;
+  }
+
+
+  h1 {
+    font-size: 25px;
+  }
+}
+
