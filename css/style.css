@@ -100,7 +100,8 @@ p {
 }
 
 #tile1 {
-  background: url("../images/tile-background.svg") no-repeat center center fixed;
+  background: url("../images/tile-background.svg") center center fixed;
+  repeat: no-repeat;
   background-size: cover;
   height: 90vh;
 }
@@ -112,6 +113,11 @@ p {
   column-gap: 2vw;
   height: 50vh;
   padding: 5vh;
+}
+
+#rickshaw {
+   width: 90%;
+   margin: auto;
 }
 
 #tile2, #tile4 {
@@ -172,6 +178,7 @@ h3 {
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
 }
 
 .project > img {
@@ -216,23 +223,39 @@ h3 {
     display: none;
   }
 
-  nav {
-    grid-template-columns: 1fr;
-  }
-
   #logo_mobile {
     display: block;
     margin: 0 auto;
     height: 70%;
   }
 
-  #content-1, #content-2, #team {
+  .project, #content-1, #content-2, #team, nav, .person {
     grid-template-columns: 1fr;
+  }
+
+  #content-2 {
+    grid-row-gap: 40px;
+  }
+
+  .second-block {
+    grid-row-start: 1;
+  }
+
+  .person {
+    padding-bottom: 20px;
   }
 
 
   h1 {
     font-size: 25px;
+  }
+
+  #rickshaw {
+    margin-top: 6vh;
+  }
+
+  .person > div > h3 {
+    margin: 10px;
   }
 }
 
