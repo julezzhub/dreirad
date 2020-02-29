@@ -14,6 +14,7 @@ nav {
   padding: 4px;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 #dreirad-logo {
@@ -126,6 +127,7 @@ p {
   position: absolute;
   bottom: calc(0vh + 30px);
   left: calc(50% - 64px);
+  z-index: 1;
 }
 
 #tile2, #tile4 {
