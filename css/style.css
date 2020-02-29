@@ -120,6 +120,14 @@ p {
    margin: auto;
 }
 
+#learnmore {
+  display: block;
+  size: 8vw;
+  position: absolute;
+  bottom: calc(0vh + 30px);
+  left: calc(50% - 64px);
+}
+
 #tile2, #tile4 {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.66) 100%), #F3DCB9;
   background: -o-linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.66) 100%), #F3DCB9;
@@ -181,10 +189,18 @@ h3 {
   margin-bottom: 30px;
 }
 
-.project > img {
+.project > a {
+  margin: auto;
+}
+
+.project > a > img {
   width: 80%;
   display: block;
   margin: auto;
+}
+
+.project > p {
+  padding: 0 20px;
 }
 
 #tile4 {
@@ -198,8 +214,16 @@ h3 {
 
   #content-1 {
     padding: 15vh;
-    padding-top:10vh;
     padding-bottom: 5vh;
+  }
+
+  #team, #tile4 {
+    padding: 5vh 15vh;
+  }
+
+  #tile2, #tile3, #tile4 {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 }
 
@@ -207,6 +231,10 @@ h3 {
   #nav-links, p {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .person > img {
+    height: 20vh;
   }
 }
 
@@ -256,6 +284,10 @@ h3 {
 
   .person > div > h3 {
     margin: 10px;
+  }
+
+  .project > p {
+    padding: 0;
   }
 }
 

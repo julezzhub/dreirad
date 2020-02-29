@@ -15,8 +15,8 @@
     <span id="brand">DREIRAD</span>
     <div id="nav-links">
       <a href="#tile2">about</a>
-      <a href="#">fundraising</a>
-      <a style="margin-right:5%" href="#">support</a>
+      <a href="#tile3">fundraising</a>
+      <a style="margin-right:5%" href="#tile4">support</a>
     </div>
     <img id="logo_mobile" src="images/Frame.png" alt="Dreirad Logo">
   </nav>
@@ -26,7 +26,9 @@
         <img src="images/text1.svg" alt="Rollin' on the Rickshaw | Rickshaw Run 2020 - 3-18th April" style="width: 100%; margin: auto 0">
         <img src="images/rickshaw.svg" alt="Rickshaw icon" id="rickshaw">
       </div>
-      <img src="images/learn_more.svg" alt="Learn More" style="margin: 10vh auto; display: block; size: 8vw">
+      <a href="#tile2">
+        <img src="images/learn_more.svg" alt="Learn More" id="learnmore">
+      </a>
     </div>
     <div id="tile2">
       <div id="content-2">
@@ -39,6 +41,8 @@
             We'll spend a day learning how to drive and repair engineering's highest life form, and then take this glorified lawnmower from A (Kochi) to B (Jaisalmer) in order to raise money for charity.
             Given the inadequacy of our vehicle, there's not much sense in planning ahead. So: no fixed route, no support - apart from your charitable help and loving thoughts that is.
             If you want to become a part of our trip, be it through your name, face or flag on our beautiful three-wheeler, check how to support us and our selected charities below.
+
+
           </p>
         </div>
       </div>
@@ -46,16 +50,6 @@
     <div id="tile3">
       <h1>THE DREIRAD TEAM</h1>
       <div id="team">
-        <div class="person">
-          <img src="images/carl.png" alt="Carl">
-          <div class="person-bio">
-            <h3>Carl</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis erat augue, quis pharetra augue imperdiet non.
-              Quisque a interdum tellus. Duis nec convallis ligula. Vestibulum porttitor urna quis neque auctor, sed pulvinar odio convallis.
-            </p>
-          </div>
-        </div>
         <div class="person">
           <img src="images/jasper.png" alt="Jasper">
           <div class="person-bio">
@@ -76,12 +70,24 @@
             </p>
           </div>
         </div>
+        <div class="person">
+          <img src="images/carl.png" alt="Carl">
+          <div class="person-bio">
+            <h3>Carl</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis erat augue, quis pharetra augue imperdiet non.
+              Quisque a interdum tellus. Duis nec convallis ligula. Vestibulum porttitor urna quis neque auctor, sed pulvinar odio convallis.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div id="tile4">
       <h1>FUNDRAISING</h1>
       <div class="project">
-        <img src="images/cool_earth.png" alt="Cool Earth">
+        <a href="https://coolearth.org">
+          <img src="images/cool_earth.png" alt="Cool Earth">
+        </a>
         <p>
           Cool Earth works alongside indigenous villages to halt rainforest destruction. Local people stand to lose the most from deforestation but the most to gain from its protection,
           which is why they are the forest’s best possible custodians. All Cool Earth partnerships are community-owned and led. By developing local livelihoods,
@@ -90,10 +96,12 @@
       </div>
       <div class="project">
         <p>
-          Akanksha is one of the largest urban networks of Public-Private Partnership schools in India, empowering children to maximise their potential and influencing systemic reform.
-          Currently, Akanksha reaches out to over 9300 children through its 21 schools in Mumbai and Pune.
+          Make a Difference India mobilises young leaders towards ensuring equitable outcomes for children in need of care and protection.
+          Their long term goal is to change how both system and families care for and invest in children, targeting stable middle-class adult outcomes for all the children they work with.
         </p>
-        <img src="images/akanksha.png" alt="Akanksha" class="second-block">
+        <a href="https://makeadiff.in/">
+          <img src="images/mad.svg" alt="MAD India" class="second-block">
+        </a>
       </div>
     </div>
     <div id="tile5">
@@ -101,4 +109,24 @@
     </div>
   </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 </html>
