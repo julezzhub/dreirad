@@ -86,11 +86,11 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 22px;
-  display: flex;
+  line-height: 27px;
+/*  display: flex;*/
   align-items: center;
   text-align: justify;
-  letter-spacing: 0.05em;
+/*  letter-spacing: 0.01em;*/
 
 
   color: #403F3F;
@@ -125,7 +125,7 @@ p {
   display: block;
   size: 8vw;
   position: absolute;
-  bottom: calc(0vh + 30px);
+  bottom: calc(0vh + 20px);
   left: calc(50% - 64px);
   z-index: 1;
 }
@@ -203,10 +203,16 @@ h3 {
 
 .project > p {
   padding: 0 20px;
+  margin: auto;
 }
 
-#tile4 {
+#tile4, #tile5 {
   padding: 5vh;
+}
+
+#tile5 > p {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -219,11 +225,11 @@ h3 {
     padding-bottom: 5vh;
   }
 
-  #team, #tile4 {
+  #team, #tile4, #tile5 {
     padding: 5vh 15vh;
   }
 
-  #tile2, #tile3, #tile4 {
+  #tile2, #tile3, #tile4, #tile5 {
     padding-top: 10vh;
     padding-bottom: 10vh;
   }
