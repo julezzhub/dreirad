@@ -86,7 +86,7 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 1.5em;
 /*  display: flex;*/
   align-items: center;
   text-align: justify;
@@ -212,7 +212,6 @@ h3 {
 
 #tile5 > p {
   font-size: 20px;
-  line-height: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -249,7 +248,7 @@ h3 {
 @media (max-width: 740px) {
   p {
     font-size: 12px;
-    letter-spacing: 0.05em;
+/*    letter-spacing: 0.05em;*/
     width: 100%;
   }
 }
@@ -271,6 +270,10 @@ h3 {
 
   #content-2 {
     grid-row-gap: 40px;
+  }
+
+  #content-2 > div > p {
+    width: 100%;
   }
 
   .second-block {
