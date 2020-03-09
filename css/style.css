@@ -227,6 +227,7 @@ h3 {
 
 #tile5 > p {
   font-size: 20px;
+  line-height: 1.5em;
 }
 
 .support {
@@ -372,7 +373,6 @@ h3 {
 
   #tile5 > p {
     font-size: 14px;
-    line-height: 1.5em;
   }
 
   .mobile-grid-order {
