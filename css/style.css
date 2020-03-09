@@ -221,7 +221,7 @@ h3 {
 }
 
 #tile5 {
-  width: 50%;
+  width: 776px;
   margin: 0 auto;
 }
 
@@ -254,24 +254,25 @@ h3 {
 }
 
 .btn-flat {
-  color: white;
+  color: black;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #1EDD88;
+  background: #F3DCB9;
   transition: background 0.3s ease;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  line-height: 39px;
-  letter-spacing: 0.3em;
-  font-variant: small-caps;
-  width: 100%;
+  line-height: 70px;
+  height: 70px;
+  display: block;
+  width: auto;
+  text-align: center;
 }
 
 .btn-flat:hover {
-  background: #1BCB7F;
-  color: white;
+  background: #F3DCB9;
+  color: black;
 }
 
 @media (min-width: 1200px) {
@@ -303,6 +304,10 @@ h3 {
   .person > img {
     height: 20vh;
   }
+
+  #tile5 {
+    width: 70%;
+  }
 }
 
 @media (max-width: 740px) {
@@ -310,6 +315,10 @@ h3 {
     font-size: 12px;
 /*    letter-spacing: 0.05em;*/
     width: 100%;
+  }
+
+  #tile5 {
+    width: 80%;
   }
 }
 
@@ -339,7 +348,6 @@ h3 {
   .person {
     padding-bottom: 20px;
   }
-
 
   h1 {
     font-size: 25px;
